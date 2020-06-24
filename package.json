@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "bottender dev",
     "lint": "eslint . ",
-    "start": "bottender start",
+    "start": "bottender dev",
     "test": "jest"
   },
   "dependencies": {
