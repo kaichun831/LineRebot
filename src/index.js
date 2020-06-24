@@ -52,12 +52,3 @@ async function shutUp(context) {
 async function other(context) {
   await context.sendText('整天玩遊戲，還不帶上我');
 }
-
-var app = require('express');
-app.listen(80, () => {
-  console.log('App listening on port 80!');
-});
-app.get('/', (req, res) => {
-  res.send('App get 80 port');
-});
-module.exports = app;
