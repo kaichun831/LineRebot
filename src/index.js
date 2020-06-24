@@ -1,5 +1,7 @@
+const { testEnvironment } = require("../jest.config");
+
 module.exports = async function App(context) {
-  var text = context.event.text;
+  var text = context.event.text.ToLowerCase();
   if (text == 'hi') {
     return SayHi;
   } else if (text.match('凱鈞') || text.match('KG')) {
