@@ -14,6 +14,15 @@ module.exports = async function App(context) {
     return baby;
   } else if (text.match('閉嘴')) {
     return shutUp;
+  } else if (
+    text.match('game') ||
+    text.match('遊戲') ||
+    text.match('Game') ||
+    text.match('RO') ||
+    text.match('ro') ||
+    text.match('楓之谷')
+  ) {
+    return other;
   }
   return null;
   // return context.sendText(context.event.text);
@@ -39,4 +48,7 @@ async function baby(context) {
 }
 async function shutUp(context) {
   await context.sendText('請你用你的嘴讓我閉上');
+}
+async function other(context) {
+  await context.sendText('整天玩遊戲，還不帶上我');
 }

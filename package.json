@@ -9,7 +9,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "bottender": "1.4.7"
+    "babel-core": "^6.26.3",
+    "bottender": "1.4.7",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "eslint": "^7.3.1",
