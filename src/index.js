@@ -19,7 +19,7 @@ module.exports = async function App(context) {
   } else if (
     text.match('game') ||
     text.match('遊戲') ||
-    text.match('Game') ||
+    // text.match('Game') ||
     text.match('RO') ||
     text.match('ro') ||
     text.match('楓之谷')
